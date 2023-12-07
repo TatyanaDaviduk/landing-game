@@ -270,6 +270,7 @@ body {
   background-color: #fff;
   bottom: -9px;
   left: 0;
+  z-index: 10;
 }
 .about__desc {
   max-width: 365px;
@@ -294,9 +295,74 @@ body {
   z-index: -1;
 }
 .about__gallery {
-  width: 621px;
-  height: auto;
-  background-color: #F3AF34;
+  width: 600px;
+}
+
+.mySlider {
+  position: relative;
+  height: 100%;
+}
+.mySlider__slide {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.mySlider__slide img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.swiper-pagination {
+  position: absolute !important;
+  bottom: 30px !important;
+  left: 50% !important;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet:hover {
+  border-color: #FFB548;
+}
+
+.swiper-pagination-bullet-active:hover {
+  background-color: #FFB548;
+}
+
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.muSlider__buttons {
+  width: 100%;
+}
+
+.mySlider__button-prev {
+  transform: rotate(180deg);
 }
 
 .features {
@@ -553,6 +619,11 @@ body {
   color: #FFB548;
   font-size: 18px;
   line-height: 25px;
+}
+.form__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 19px;
 }
 .form__input::placeholder {
   color: rgba(255, 255, 255, 0.5);

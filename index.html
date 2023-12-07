@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -105,8 +109,48 @@
                         </div>
                     </div>
                     <div class="about__gallery">
+                        <div class="swiper mySlider">
+                           
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide mySlider__slide">
+                                        <img src="img/gallery/1.jpg" alt="">
+                                     </div>
+                                     <div class="swiper-slide mySlider__slide">
+                                        <img src="img/gallery/2.jpg" alt="">
+                                    </div>
+                                     <div class="swiper-slide mySlider__slide">
+                                         <img src="img/gallery/3.png" alt="">
+                                     </div>
+                                    <div class="swiper-slide mySlider__slide">
+                                        <img src="img/gallery/1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide mySlider__slide">
+                                        <img src="img/gallery/2.jpg" alt="">
+                                    </div>
+                                    
+                                </div>
     
-                    </div>
+                                <div class="swiper-pagination mySlider__pagination"></div>
+                                <div class="muSlider__buttons">
+                                    <div class="swiper-button-prev mySlider__button-prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="38" viewBox="0 0 18 38" fill="none">
+                                            <path d="M1.82153 1.95628L1.82153 36.0297L15.5642 19.1837L1.82153 1.95628Z" stroke="white" stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                    </div>
+                                    <div class="swiper-button-next mySlider__button-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="38" viewBox="0 0 18 38" fill="none">
+                                            <path d="M1.82153 1.95628L1.82153 36.0297L15.5642 19.1837L1.82153 1.95628Z" stroke="white" stroke-width="3.36454" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                    </div>
+                                </div>
+    
+                        </div>
+    
+    
+                
+                        </div>
+                </div>
+ 
                 </div>
             </div>
         </div>
@@ -348,5 +392,6 @@
     </main>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script/script.js"></script>
 </html>
